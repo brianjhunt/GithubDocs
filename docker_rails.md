@@ -5,7 +5,7 @@
 #### Get application code on your local computer without having Ruby installed:
 ```bash
 # Start in the project directory
->cd project_directory
+> cd project_directory
 
 # Start a temporary container
 > docker container run --rm -it -v ${PWD}:/usr/src/app ruby:2.6 bash
