@@ -16,3 +16,10 @@
 or
 > tmux list-sessions
 ```
+
+### Create a Named Session
+```sh
+> tmux new-session -s name_of_session
+or
+> tmux new -s name_of_session
+```
