@@ -1,4 +1,4 @@
-# TMUX Cheatsheet
+# TMUX Cheatsheet (Basic Commands and Operations)
 
 ### Open TMUX
 ```sh
