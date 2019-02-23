@@ -35,3 +35,10 @@ or
 0r
 > tmux attach -t session_name
 ```
+
+### End Session
+```sh
+> tmux kill-session -t session_name
+or
+> exit
+```
