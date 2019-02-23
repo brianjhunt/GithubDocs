@@ -55,5 +55,15 @@ or
 
 ### Name a Window
 ```sh
-PREFIX ,
+> PREFIX ,
 ```
+
+### Navigate windows
+```sh
+> PREFIX n // next window
+or
+> PREFIX p // previous window
+
+> PRFIX NUMBER // 0 index based array
+```
+
