@@ -47,3 +47,13 @@ or
 ```sh
 > tmux new -s session-name -n window_name
 ```
+
+### Open another window inside a session
+```sh
+> PREFIX C
+```
+
+### Name a Window
+```sh
+PREFIX ,
+```
