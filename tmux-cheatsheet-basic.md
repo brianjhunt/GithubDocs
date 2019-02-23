@@ -72,3 +72,8 @@ or
 > PREFIX f name_of_window
 > PREFIX w // visual representation of the windows, select one
 ```
+
+### Close a Window
+```sh
+> PREFIX & // will show a confirmation
+```
