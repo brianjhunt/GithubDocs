@@ -64,6 +64,11 @@ or
 or
 > PREFIX p // previous window
 
-> PRFIX NUMBER // 0 index based array
+> PREFIX NUMBER // 0 index based array
 ```
 
+### Search through windows
+```sh
+> PREFIX f name_of_window
+> PREFIX w // visual representation of the windows, select one
+```
