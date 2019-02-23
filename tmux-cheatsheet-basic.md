@@ -23,3 +23,15 @@ or
 or
 > tmux new -s name_of_session
 ```
+
+### Detach a Session
+```sh
+> PREFIX d
+```
+
+### Attach to a session
+```sh
+> tmux attach
+0r
+> tmux attach -t session_name
+```
