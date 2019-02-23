@@ -42,3 +42,8 @@ or
 or
 > exit
 ```
+
+### Create a named session with window name
+```sh
+> tmux new -s session-name -n window_name
+```
