@@ -64,4 +64,34 @@ CMD ["bin/rails", "s", "-b", "0.0.0.0"]
 > docker container run -p 3000:3000 image_id
 ```
 
+## Setting up a Docker Compose File for a Ruby on Rails Application
 
+#### Create the docker compose file in the project directory
+```bash
+> touch docker-compose.yml
+```
+
+#### Docker Compose File
+This file describes the application.
+```yaml
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+```
+
+Note: By default, Ruby buffers output to stdout , which doesn’t play well with Com-
+pose. To avoid this:
+
+```ruby
+# config/boot.rb
+$stdout.sync = true
+```
+
+#### Start the Services
+```bash
+> docker-compose up
+```
