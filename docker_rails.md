@@ -81,6 +81,8 @@ services:
     build: .
     ports:
       - "3000:3000"
+    volumes:
+      - .:/usr/src/app
 ```
 
 Note: By default, Ruby buffers output to stdout , which doesn’t play well with Com-
