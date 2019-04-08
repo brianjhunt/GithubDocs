@@ -36,8 +36,8 @@ The dockerfile will be used as a blue print to create the image.
 ```txt
 FROM ruby:2.6
 
-RUN apt-get update -yqq
-RUN apt-get install -yqq --no-install-recommends nodejs
+RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
+  nodejs
 
 COPY . /usr/src/app/
 
