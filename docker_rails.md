@@ -43,6 +43,8 @@ COPY . /usr/src/app/
 
 WORKDIR /usr/src/app
 RUN bundle install
+
+CMD ["bin/rails", "s", "-b", "0.0.0.0"]
 ```
 
 #### Build the image from the Dockerfile
@@ -56,7 +58,7 @@ RUN bundle install
 
 #### Start the Rails server
 ```bash
-> docker container run -p 3000:3000 image_id bin/rails s -b 0.0.0.0
+> docker container run -p 3000:3000 image_id
 ```
 
 
