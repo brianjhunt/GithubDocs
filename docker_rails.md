@@ -118,5 +118,16 @@ $stdout.sync = true
 # View container logs and continue to follow / append
 > docker-compose logs -f <service name>
 
+# Run one off commands
+> docker-compose run --rm web echo "running a different command"
 
+# Run one off commands without starting up a new container
+> docker-container exec web echo "running a different command"
+
+# Rebuilding images
+> docker-compose build web
+# Why rebuild images? 
+# Updated Gemfile and need to reinstall your gems
+# Modified Dockerfile with new dependencies
+# Want to share your image and need to include the latest code charges
 ```
