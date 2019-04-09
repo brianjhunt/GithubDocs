@@ -97,3 +97,26 @@ $stdout.sync = true
 ```bash
 > docker-compose up
 ```
+
+### Docker Compose Commands
+```bash
+# See running containers (Name, Command, State, Ports)
+> docker-compose ps
+
+# Stop containers
+> docker-compose stop <service name>
+
+# Start containers
+> docker-compose start <service name>
+
+# Restart containers to pick up config changes
+> docker-compose restart <service name>
+
+# View container logs
+> docker-compose logs <service name>
+
+# View container logs and continue to follow / append
+> docker-compose logs -f <service name>
+
+
+```
