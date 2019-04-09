@@ -130,4 +130,13 @@ $stdout.sync = true
 # Updated Gemfile and need to reinstall your gems
 # Modified Dockerfile with new dependencies
 # Want to share your image and need to include the latest code charges
+
+# Remove the app's containers
+> docker-compose rm
+
+# Remove unused images
+> docker image prune
+
+# Free up all unused resources
+> docker system prune
 ```
