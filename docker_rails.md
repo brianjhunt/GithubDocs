@@ -139,4 +139,19 @@ $stdout.sync = true
 
 # Free up all unused resources
 > docker system prune
+
+# View defined networks
+> docker network ls
+```
+
+#### Workflow for Changes to a Container
+```bash
+> docker-compose stop <service>
+> docker-compose build <service>
+> docker-compose up -d <service>
+```
+#### Rails Workflows
+```bash
+# Generate a controller and action
+> docker-compose exec <service> bin/rails g controller welcome index
 ```
