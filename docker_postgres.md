@@ -90,3 +90,7 @@ POSTGRES_DB=to-do_development
 ```bash
 > docker-compose run --rm web bin/rails db:create
 ```
+### Restart the RAils Server and force docker to create a new container
+```bash
+> docker-compose up -d --force-recreate web
+```
