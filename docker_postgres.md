@@ -58,10 +58,35 @@ production:
 services:
   web:
     ...
-    environment:
-      DATABASE_HOST: database
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: secret-password
-      POSTGRES_DB: to-do_development
+    env_file:
+      - .env/development/database
+      - .env/development/web
     ...
+  database:
+    env_file:
+      - .env/development/database
+```
+
+### Create dot files which will not be committed to version control
+```bash
+> mkdir -p .env/development
+> touch .env/development/web
+> touch .env/development/database
+```
+
+Add web-service-specific environment variables to .env/development/web
+```
+DATABASE_HOST=database
+```
+
+Add database-service-specific environment variables to .env/development/database
+```
+POSTGRES_USER=posgres
+POSTGRES_PASSWORD=secret-password
+POSTGRES_DB=to-do_development
+```
+
+### Create the development and test databases
+```bash
+> docker-compose run --rm web bin/rails db:create
 ```
