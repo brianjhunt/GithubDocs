@@ -63,4 +63,5 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: secret-password
       POSTGRES_DB: to-do_development
+    ...
 ```
