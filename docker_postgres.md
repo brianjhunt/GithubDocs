@@ -27,9 +27,9 @@ Stop the web container
 Rebuild the image (includes bundle install)
 ```bash
 > docker-compose build web
+```
 
 ### Configure the config/database.yml file for PostGRESQL
-
 ```yaml
 default: &default
 adapter: postgresql
