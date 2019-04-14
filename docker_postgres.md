@@ -53,3 +53,14 @@ database: myapp_test
 production:
 <<: *default
 ```
+### Update docker-compose file for web to include the same environment variables
+```yaml
+services:
+  web:
+    ...
+    environment:
+      DATABASE_HOST: database
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret-password
+      POSTGRES_DB: to-do_development
+```
