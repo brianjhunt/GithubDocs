@@ -106,6 +106,25 @@ database:
     - db_data:/var/lib/posgresql/data
 
 volumes:
-  db_data
+  db_data:
 ...
 ```
+### Restart the database container to pick up the changes we made
+```bash
+> docker-compose stop database
+```
+
+### Remove the database container
+```bash
+> docker-compose rm -f database
+```
+
+### Restart the database container
+```bash
+> docker-compose up -d database
+```
+### Recreate and migrate the database
+```bash
+> docker-compose exec web bin/rails db:create db:migrate
+```
+
