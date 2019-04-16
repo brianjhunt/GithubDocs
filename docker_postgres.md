@@ -95,7 +95,7 @@ POSTGRES_DB=to-do_development
 > docker-compose up -d --force-recreate web
 ```
 ### Setup volumes for data by modifying the docker-compose.yml file
-This allow the data to live on our local machine and not on disk inside the container.
+This allow the data to live on our local machine and not on disk inside the container by mounting a named volume. We allow docker-compose to manage this for us.
 ```yaml
 ...
 database:
