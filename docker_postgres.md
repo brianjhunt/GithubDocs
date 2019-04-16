@@ -90,7 +90,22 @@ POSTGRES_DB=to-do_development
 ```bash
 > docker-compose run --rm web bin/rails db:create
 ```
-### Restart the RAils Server and force docker to create a new container
+### Restart the Rails Server and force docker to create a new container
 ```bash
 > docker-compose up -d --force-recreate web
+```
+### Setup volumes for data by modifying the docker-compose.yml file
+This allow the data to live on our local machine and not on disk inside the container.
+```yaml
+...
+database:
+  image: posgres
+  env_file:
+    - .env/development/database
+  volumes:
+    - db_data:/var/lib/posgresql/data
+
+volumes:
+  db_data
+...
 ```
