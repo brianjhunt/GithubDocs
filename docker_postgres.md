@@ -127,4 +127,7 @@ volumes:
 ```bash
 > docker-compose exec web bin/rails db:create db:migrate
 ```
-
+### Location data on your local computer
+```bash
+> docker volume inspect --format '{{ .Mountpoint }}' to-do_db_data
+```
