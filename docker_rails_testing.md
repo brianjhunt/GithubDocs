@@ -12,3 +12,17 @@ end
 > docker-compose stop web
 > docker-compose build web
 ```
+### Bring compose back up and force it to use a new container for web
+```bash
+> docker-compose up -d --force-recreate web
+```
+
+### Install RSpec
+```bash
+> docker-compose exec web bin/rails rspec:install
+```
+
+### Run all specs
+```bash
+> docker-compose exec web bin/rails spec
+```
