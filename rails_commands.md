@@ -31,3 +31,9 @@
 # roll database back to specific migration version
 > rails db:migrate VERSION=0
 ```
+
+## Testing with MiniTest
+```bash
+# Run the test suite
+> rails test
+```
