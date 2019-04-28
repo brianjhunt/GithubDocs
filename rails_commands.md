@@ -20,7 +20,7 @@
 > rails destroy model User
 ```
 
-### Database Commands
+## Database Commands
 ```bash
 # migrate the database
 > rails db:migrate
