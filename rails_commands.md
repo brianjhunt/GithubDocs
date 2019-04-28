@@ -19,3 +19,15 @@
 # Undo the creation of a model (do not pass in actions/attributes)
 > rails destroy model User
 ```
+
+### Database Commands
+```bash
+# migrate the database
+> rails db:migrate
+
+# undo a single migration step
+> rails db:rollback
+
+# roll database back to specific migration version
+> rails db:migrate VERSION=0
+```
