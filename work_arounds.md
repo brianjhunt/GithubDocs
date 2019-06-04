@@ -39,4 +39,4 @@ We want an interactive sessions with the container. Instead of bringing up compo
 ```bash
 > docker-compose run --service-ports <container name>
 ```
-docker-compose run by default will ignore port mappings specified in the docker-compose.yml file for the service. --service-ports changes this behavior and maps them. Without this option, the application could not be reached at localhost:3000 in the browser.
+*docker-compose run* by default will ignore port mappings specified in the docker-compose.yml file for the service. --service-ports changes this behavior and maps them. Without this option, the application could not be reached at localhost:3000 in the browser.
